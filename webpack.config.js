@@ -6,7 +6,7 @@ const webpack = require('webpack');
 
 const plugins = [
   new HtmlWebpackPlugin({
-    title: 'Hyperapp One',
+    title: 'Hyper To Do',
     template: './src/index.html',
   }),
   new ScriptExtHtmlWebpackPlugin({
