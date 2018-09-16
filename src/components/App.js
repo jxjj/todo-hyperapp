@@ -1,4 +1,5 @@
 import { h } from 'hyperapp';
+import NewTodoInput from './NewTodoInput';
 import TodoList from './TodoList';
 
 export default ({ todos }) => (
@@ -7,9 +8,7 @@ export default ({ todos }) => (
       <h1>Todos</h1>
     </header>
     <section class="hero-section">
-      <div class="new-todo input-group">
-        <input id="new-todo" placeholder="What do you need to do?" />
-      </div>
+      <NewTodoInput placeholder="What do you need to do?" />
     </section>
     <section class="page-section">
       <h2 class="section-heading">My List</h2>

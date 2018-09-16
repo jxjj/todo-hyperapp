@@ -1,5 +1,5 @@
 export default {
-  newTodo: 'New Todo Field',
+  newTodoInput: '',
   todos: [
     {
       id: 1,

@@ -1,10 +1,6 @@
 import { h } from 'hyperapp';
 import cc from 'classcat';
-
-const preventDefault = fn => (event) => {
-  event.preventDefault();
-  fn();
-};
+import preventDefault from '../helpers/preventDefault';
 
 export default ({ todo }) => (state, { toggleCompleted }) => {
   const {
