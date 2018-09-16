@@ -20,10 +20,7 @@ const plugins = [
 ];
 
 module.exports = () => ({
-  entry: [
-    './src/index.js',
-    './styles/app.css',
-  ],
+  entry: ['./src/index.js'],
   devtool: 'source-map',
   output: {
     filename: '[name].[hash].js',
@@ -34,9 +31,7 @@ module.exports = () => ({
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [
-          path.resolve(__dirname, './'),
-        ],
+        include: [path.resolve(__dirname, './')],
       },
       {
         test: /\.css$/,

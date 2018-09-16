@@ -1,0 +1,19 @@
+.new-todo-input input {
+  display: block;
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 30rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 0.1em solid var(--placeholder-text-color);
+  color: var(--text-color);
+  padding: 0.33em 0;
+}
+
+.new-todo-input input:focus {
+  border-color: var(--text-color);
+}
+.new-todo-input input::placeholder {
+  color: var(--placeholder-text-color);
+}

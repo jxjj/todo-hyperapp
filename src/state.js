@@ -6,12 +6,12 @@ export default {
   todos: [
     {
       id: 1,
-      text: 'Walk the Cat',
+      text: 'Play with the Kitties',
       completed: false,
     },
     {
       id: 2,
-      text: 'Play with Kitties',
+      text: 'Develop Super Annihilation Death Laser',
       completed: false,
     },
     {

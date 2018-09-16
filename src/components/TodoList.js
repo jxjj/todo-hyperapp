@@ -1,6 +1,7 @@
 import { h } from 'hyperapp';
 import * as CONSTANTS from '../constants';
 import TodoItem from './TodoItem';
+import './TodoList.css';
 
 const getVisibleTodos = ({ todos, filter }) => {
   switch (filter) {
