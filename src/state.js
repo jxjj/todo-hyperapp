@@ -1,5 +1,8 @@
+import * as CONSTANTS from './constants';
+
 export default {
   newTodoInput: '',
+  filter: CONSTANTS.SHOW_ALL,
   todos: [
     {
       id: 1,

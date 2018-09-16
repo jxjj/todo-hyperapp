@@ -2,7 +2,7 @@ import { h } from 'hyperapp';
 import cc from 'classcat';
 import preventDefault from '../helpers/preventDefault';
 
-export default ({ todo }) => (state, { toggleCompleted }) => {
+export default ({ todo }) => (state, { removeTodo, toggleCompleted }) => {
   const {
     id, editing, completed, text,
   } = todo;
@@ -12,7 +12,9 @@ export default ({ todo }) => (state, { toggleCompleted }) => {
         <input type="checkbox" checked={completed} />
         {text}
       </label>
-      <button class="btn-delete">&times;</button>
+      <button class="btn-delete" onclick={preventDefault(() => removeTodo(id))}>
+        &times;
+      </button>
     </li>
   );
 };

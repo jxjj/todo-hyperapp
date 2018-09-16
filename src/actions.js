@@ -23,5 +23,11 @@ export default {
     return { todos: state.todos.concat(newTodo) };
   },
 
+  removeTodo: id => state => ({
+    todos: state.todos.filter(item => item.id !== id),
+  }),
+
   updateNewTodoInput: text => ({ newTodoInput: text }),
+
+  setFilter: filtername => ({ filter: filtername }),
 };
