@@ -1,6 +1,7 @@
 import { h } from 'hyperapp';
+import TodoList from './TodoList';
 
-export default () => (
+export default ({ todos }) => (
   <div id="app">
     <header class="app-bar">
       <h1>Todos</h1>
@@ -12,28 +13,7 @@ export default () => (
     </section>
     <section class="page-section">
       <h2 class="section-heading">My List</h2>
-      <ul class="todo-list">
-        <li class="todo-item">
-          <label>
-            <input type="checkbox" value="completed" />
-            Walk the Cat
-          </label>
-          <button class="btn-delete">&times;</button>
-        </li>
-        <li class="todo-item">
-          <label>
-            <input type="checkbox" value="completed" />
-            Play with kitties
-          </label>
-          <button class="btn-delete">&times;</button>
-        </li>
-        <li class="todo-item completed">
-          <label>
-            <input type="checkbox" value="completed" /> Get Milk
-          </label>
-          <button class="btn-delete">&times;</button>
-        </li>
-      </ul>
+      <TodoList todos={todos} heading="My List" />
       <div class="filter-section">
         <ul>
           <li>All</li>

@@ -1,16 +1,8 @@
 {
+  "presets": ["env"],
   "plugins": [
     ["transform-react-jsx", { "pragma": "h" }],
+    "transform-object-rest-spread",
     "dynamic-import-webpack"
-  ],
-  "presets": [
-    ["env", { "modules": false }]
-  ],
-  "env": {
-    "test": {
-      "presets": [
-        ["env", "es2015"]
-      ]
-    }
-  }
+  ]
 }
